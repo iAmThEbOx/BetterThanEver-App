@@ -24,7 +24,7 @@ class CustomUser(AbstractUser):
     )
     profile_pic = models.ImageField(height_field=200, width_field=200)
     sleep_time = models.TimeField()
-    sleep_duration = models.TimeField()
+    sleep_end = models.TimeField()
     balance = models.PositiveIntegerField()
     address = models.CharField(max_length=200)
     email = models.EmailField()
