@@ -1,0 +1,12 @@
+
+<h2>Leaderboard</h2>
+{% for profile in top %}
+    {% if user == profile.user %}
+        <h4 style='color:red;'>{{ profile.user.username }}</h4>
+        <p>{{ profile.revenue }}</p>
+    {% else %}
+        <h4>{{ profile.user.username }}</h4>
+        <p>{{ profile.revenue }}</p>
+    {% endif %}
+    
+{% endfor %}
