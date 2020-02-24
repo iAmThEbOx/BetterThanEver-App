@@ -1,4 +1,4 @@
-
+{% block content %}
 <h2>Leaderboard</h2>
 {% for profile in top %}
     {% if user == profile.user %}
@@ -10,3 +10,4 @@
     {% endif %}
     
 {% endfor %}
+{% endblock content %}
