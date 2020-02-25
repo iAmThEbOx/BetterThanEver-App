@@ -10,12 +10,10 @@ class UserRegistrationForm(UserCreationForm):
         model = User
         fields = ['username', 'email', 'password1', 'password2']
 
-
 class ProfileUpdateForm(forms.ModelForm):
-
     class Meta:
         model = Profile
-        fields = ['phone_number', 'address']
+        fields = ['height', 'weight', 'date_of_birth', 'gender', 'address', 'phone_number', 'revenue']
 
 class SleepUpdateForm(forms.ModelForm):
     class Meta:

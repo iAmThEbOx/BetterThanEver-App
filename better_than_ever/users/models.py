@@ -74,6 +74,27 @@ class FitnessChallengeProgress(models.Model):
     def __str__(self):
         return f'{self.fitness_challenge.challenge_text}: {self.user.username}\'s at {self.progress}'
 
+class PastWeight(models.Model):
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    weight = models.PositiveSmallIntegerField(
+        validators=[MinValueValidator(2), MaxValueValidator(1500)],
+    )
+    date_time = models.DateTimeField(auto_now=True)
+
+class PastHeight(models.Model):
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    height = height = models.PositiveSmallIntegerField(
+        validators=[MinValueValidator(10), MaxValueValidator(120)],
+        null=True,
+    )
+    date_time = models.DateTimeField(auto_now=True)
+
+class PastSleepHours(models.Model):
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    sleep_start = models.TimeField()
+    sleep_end = models.TimeField()
+    date_time = models.DateTimeField(auto_now=True)
+
 
     
 
