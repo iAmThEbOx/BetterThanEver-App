@@ -1,2 +1,2 @@
-# FitNex: All Your Health Needs in One App
+# FitNex: SuperApp to Hypercharge Your Health
 
