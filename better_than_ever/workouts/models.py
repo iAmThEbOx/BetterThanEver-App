@@ -1,6 +1,6 @@
 from django.db import models
 
-class Workouts(models.Model):
+class workouts(models.Model):
     CATEGORY_CHOICES = [
         ('ES','estimated time'),
         ('TT','title'),
@@ -18,27 +18,27 @@ class Bodyweight(models.Model):
     title = models.CharField(max_length=100)
     exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
     workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=240)
+    workout_link = models.URLField(maxlength=250)
     
 class StrengthTraining(models.Model):
     # parse URLs from youtube
     title = models.CharField(max_length=100)
     exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
     workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=240)
+    workout_link = models.URLField(maxlength=250)
 
 class Cardio(models.Model):
     title = models.CharField(max_length=100)
     exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
     workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=240)
+    workout_link = models.URLField(maxlength=250)
 
 
 class SpeedAndAgility(models.Model):
     title = models.CharField(max_length=100)
     exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
     workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=240)
+    workout_link = models.URLField(maxlength=250)
 
 
 class Flexibility(models.Model):
@@ -47,7 +47,7 @@ class Flexibility(models.Model):
     title = models.CharField(max_length=100)
     exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
     workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=240)
+    workout_link = models.URLField(maxlength=250)
 
 class Meditation(models.Model):
     title = models.CharField(max_length=100)
