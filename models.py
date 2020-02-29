@@ -14,7 +14,6 @@ class Workouts(models.Model):
 # user will click on the description the user will be redirected to the source URL (where the workouts are found from)
 
 class Bodyweight(models.Model):
-    # in bodyweight, we want to code in multiple things
     # let's add the exercises scraped from a collective archive
     title = models.CharField(max_length=100)
     exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
