@@ -16,7 +16,7 @@ class Profile(models.Model):
         validators=[MinValueValidator(2), MaxValueValidator(1500)],
         null=True,
     )
-    date_of_birth = models.DateField(auto_now=True)
+    date_of_birth = models.DateField(null=True)
     GENDER_CHOICES = [
         ('M', 'Male'),
         ('F', 'Female'),
@@ -83,7 +83,7 @@ class PastWeight(models.Model):
 
 class PastHeight(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
-    height = height = models.PositiveSmallIntegerField(
+    height = models.PositiveSmallIntegerField(
         validators=[MinValueValidator(10), MaxValueValidator(120)],
         null=True,
     )

@@ -18,13 +18,21 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from users import views as user_views
+from django.contrib.auth import views as auth_views
+
+# Registration and login currently broken 03-01-20
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('leaderboard/', user_views.LeaderBoardView.as_view(), name='leaderboard')
+    path('leaderboard/', user_views.LeaderBoardView.as_view(), name='leaderboard'),
+    path('weightupdate/', user_views.WeightUpdateView.as_view(), name='weightupdate'),
+    path('profileupdate/', user_views.UpdateProfileView.as_view(), name='profileupdate'),
+    path('signup/', user_views.register, name='register'),
+    path('login/', auth_views.LoginView.as_view(template_name='users/register.html'), name='login')
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 # Test users have their password in the form Password!{Number}

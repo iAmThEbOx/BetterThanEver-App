@@ -1,0 +1,54 @@
+.container
+  .card-wrap
+  
+    .card.border-0.shadow.card--welcome.is-show#welcome
+      .card-body
+        h2.card-title Fitnex
+        p The Fitness App of the Future
+        <br>
+        .btn-wrap
+          a(data-target="register").btn.btn-lg.btn-register.js-btn REGISTER
+          a(data-target="login").btn.btn-lg.btn-login.js-btn LOGIN
+          
+    .card.border-0.shadow.card--register#register
+      .card-body
+        h2.card-title Create Account
+        p.card-text Start your fitness journey!
+          <br>
+          <br>
+        p.badge-wrap
+          a.badge: i.fab.fa-facebook-f
+          a.badge: i.fab.fa-google
+          a.badge: i.fab.fa-twitter
+          a.badge: i.fab.fa-github
+        p <br>
+        form
+          .form-group
+            input(type='text' placeholder='Name' required).form-control
+          .form-group
+            input(type='username' placeholder='Username' required).form-control
+          .form-group
+            input(type='password' placeholder='Password' required).form-control
+            <br>
+          button.btn.btn-lg REGISTER
+      button(data-target="welcome").btn.btn-back.js-btn: i.fas.fa-angle-left
+          
+    .card.border-0.shadow.card--login#login
+      .card-body
+        h2.card-title Welcome Back!
+        p Resume your fitness journey!
+        <br>
+        p.badge-wrap
+          a.badge: i.fab.fa-facebook-f
+          a.badge: i.fab.fa-google
+          a.badge: i.fab.fa-twitter
+          a.badge: i.fab.fa-github
+        p <br>
+        form
+          .form-group
+            input(type='email' placeholder='Email' required).form-control
+          .form-group
+            input(type='password' placeholder='Password' required).form-control
+          p: <br>
+          button.btn.btn-lg LOGIN
+      button(data-target="welcome").btn.btn-back.js-btn: i.fas.fa-angle-left

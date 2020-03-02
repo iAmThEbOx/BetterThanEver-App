@@ -1,56 +1,25 @@
 from django.db import models
 
-class workouts(models.Model):
-    CATEGORY_CHOICES = [
-        ('ES','estimated time'),
-        ('TT','title'),
-        ('DS','description'),
-        ('WC','category')
+class Workout(models.Model):
+    title = models.CharField(max_length=140)
+    description = models.CharField(max_length=300)
+    link = models.CharField(max_length=500)
+    INTENSITY_CHOICES= [
+        ('L', 'Low'),
+        ('M', 'Medium'),
+        ('H', 'High')
     ]
-    category = models.CharField(
-        max_length=2, choices=CATEGORY_CHOICES
-    )
-# user will click on the description the user will be redirected to the source URL (where the workouts are found from)
+    intensity = models.CharField(max_length=1, choices=INTENSITY_CHOICES)
+    CATEGORY_CHOICES = [
+        ('CA', 'Cardio'),
+        ('ST', 'Strength'),
+        ('EN', 'Endurance'),
+        ('FL', 'Flexibility'),
+        ('ME', 'Meditation'),
+        ('SP', 'Speed')
+    ]
+    category = models.CharField(max_length=2, choices=CATEGORY_CHOICES)
 
-class Bodyweight(models.Model):
-    # in bodyweight, we want to code in multiple things
-    # let's add the exercises scraped from a collective archive
-    title = models.CharField(max_length=100)
-    exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
-    workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=250)
-    
-class StrengthTraining(models.Model):
-    # parse URLs from youtube
-    title = models.CharField(max_length=100)
-    exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
-    workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=250)
+    def __str__(self):
+        return f'{self.title}'
 
-class Cardio(models.Model):
-    title = models.CharField(max_length=100)
-    exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
-    workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=250)
-
-
-class SpeedAndAgility(models.Model):
-    title = models.CharField(max_length=100)
-    exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
-    workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=250)
-
-
-class Flexibility(models.Model):
-    # range and mobility, stretches (take from book)
-    # copy paste the description and title etc from directly the book
-    title = models.CharField(max_length=100)
-    exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
-    workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=250)
-
-class Meditation(models.Model):
-    title = models.CharField(max_length=100)
-    exercise = models.ForeignKey(exercise,on_delete=models.CASCADE)
-    workout_description = models.TextField(blank=True, max_length=500)
-    workout_link = models.URLField(maxlength=250)

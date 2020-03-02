@@ -4,25 +4,24 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 
 class UserRegistrationForm(UserCreationForm):
-    email = forms.EmailField()
-
     class Meta:
         model = User
-        fields = ['username', 'email', 'password1', 'password2']
+        fields = ['username', 'password1', 'password2']
 
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['height', 'weight', 'date_of_birth', 'gender', 'address', 'phone_number', 'revenue']
+        fields = ['height', 'weight', 'date_of_birth', 'gender', 'address', 'phone_number']
 
-class SleepUpdateForm(forms.ModelForm):
+
+class WeightUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['sleep_time', 'sleep_end']
+        fields = ['weight']
 
-class WeightHeightUpdateForm(forms.ModelForm):
+class HeightUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['weight', 'height']
+        fields = ['height']
 
         
