@@ -4,12 +4,9 @@ class Workout(models.Model):
     title = models.CharField(max_length=140)
     description = models.CharField(max_length=300)
     link = models.CharField(max_length=500)
-    INTENSITY_CHOICES= [
-        ('L', 'Low'),
-        ('M', 'Medium'),
-        ('H', 'High')
-    ]
-    intensity = models.CharField(max_length=1, choices=INTENSITY_CHOICES)
+    duration = models.CharField(max_length=50)
+
+
     CATEGORY_CHOICES = [
         ('CA', 'Cardio'),
         ('ST', 'Strength'),
