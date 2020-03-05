@@ -13,10 +13,10 @@ class Workout(models.Model):
     CATEGORY_CHOICES = [
         ('CA', 'Cardio'),
         ('ST', 'Strength'),
-        ('EN', 'Endurance'),
         ('FL', 'Flexibility'),
         ('ME', 'Meditation'),
-        ('SP', 'Speed')
+        ('SP', 'Speed'),
+        ('GE', 'General')
     ]
     category = models.CharField(max_length=2, choices=CATEGORY_CHOICES)
 

@@ -28,7 +28,8 @@ urlpatterns = [
     path('weightupdate/', user_views.WeightUpdateView.as_view(), name='weightupdate'),
     path('profileupdate/', user_views.UpdateProfileView.as_view(), name='profileupdate'),
     path('signup/', user_views.register, name='register'),
-    path('login/', auth_views.LoginView.as_view(template_name='users/register.html'), name='login')
+    path('login/', auth_views.LoginView.as_view(template_name='users/register.html'), name='login'),
+    path('workouts/', include('workouts.urls')),
 ]
 
 if settings.DEBUG:

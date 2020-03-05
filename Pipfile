@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 django-widget-tweaks = "*"
 gunicorn = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"

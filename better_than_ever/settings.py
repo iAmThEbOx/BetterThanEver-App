@@ -8,13 +8,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('FITNEX_SECRET_KEY')
+SECRET_KEY = '316690b353a758bdf26e24a841d9f512aba81b9f6c84c5d9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = [
     'ftnx.herokuapp.com',
+    'localhost',
 ]
 
 
