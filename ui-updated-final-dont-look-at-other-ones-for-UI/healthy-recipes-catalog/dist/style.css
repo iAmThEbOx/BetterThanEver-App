@@ -1,0 +1,402 @@
+body {
+  background: linear-gradient(to top right, blue, red);
+}
+
+h1 {
+  color: black !important;
+}
+
+a.ext-link {
+  position: relative;
+  height: 100%;
+  text-decoration: none;
+  color: #f8f9fa;
+  cursor: pointer;
+}
+a.ext-link > div {
+  position: relative;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  line-height: 1;
+  opacity: 1;
+  position: relative;
+}
+
+.subtitle {
+  color: #ced4da;
+  font-size: .9rem;
+  letter-spacing: .035rem;
+  line-height: 1.125;
+  margin: -.25rem 0 0;
+  opacity: 0;
+}
+
+.wrapper .row {
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper .row > div {
+  height: 340px;
+  overflow: hidden;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.wrapper .row > div:before {
+  background: rgba(33, 37, 41, 0.7);
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.wrapper .row:hover > div {
+  flex-basis: calc(100% * 1/6);
+  flex-basis: 16.66%;
+  max-width: calc(100% * 1/6);
+  max-width: 16.66%;
+}
+.wrapper .row .item-wrapper {
+  flex-basis: calc(100% * 1/3);
+  flex-basis: 33.33%;
+  max-width: calc(100% * 1/3);
+  max-width: 33.33%;
+}
+.wrapper .row .item-wrapper > div {
+  height: 100%;
+  position: relative;
+}
+.wrapper .row .item-wrapper > a > div {
+  position: relative;
+  height: 100%;
+  padding: 1rem 0;
+}
+.wrapper .row .item-wrapper .description p {
+  width: calc(100% * 2/3);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 0;
+  opacity: 0;
+}
+.wrapper .row .item-wrapper .category-icon {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  font-size: 0.79rem;
+  color: #0DAFE0;
+  display: flex;
+  align-items: center;
+  padding: .35rem;
+  opacity: .7;
+  filter: grayscale(50%);
+}
+.wrapper .row .item-wrapper .category-icon:after {
+  content: '';
+  display: block;
+  margin-left: .5rem;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(//themjcl.com/wp-content/uploads/2019/02/sports_biotech_icon.svg);
+  mask-image: url(//themjcl.com/wp-content/uploads/2019/02/sports_biotech_icon.svg);
+  background-color: #0DAFE0;
+  height: 20px;
+  width: 21px;
+}
+.wrapper .row .item-wrapper:hover {
+  flex-basis: calc(100% * 2/3);
+  flex-basis: 66.66%;
+  max-width: calc(100% * 2/3);
+  max-width: 66.66%;
+}
+.wrapper .row .item-wrapper:hover .title {
+  font-size: 1.953rem;
+  color: #212529;
+  text-shadow: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.wrapper .row .item-wrapper:hover .subtitle {
+  opacity: 1;
+  color: #495057;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.wrapper .row .item-wrapper:hover .category-icon {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+.wrapper .row .item-wrapper:hover .description p {
+  opacity: 1;
+  color: #212529;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.wrapper .row .item-wrapper:hover:before {
+  background: rgba(248, 249, 250, 0.8) !important;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobile-wrapper {
+  height: initial;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.mobile-wrapper .row {
+  flex-direction: column;
+}
+.mobile-wrapper .row > div {
+  position: relative;
+  height: auto;
+  max-width: none !important;
+  flex-basis: 100% !important;
+}
+.mobile-wrapper .row > div:before {
+  background: rgba(33, 37, 41, 0.3);
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.mobile-wrapper .row > div:first-child:hover {
+  margin-left: initial;
+}
+.mobile-wrapper .row > div:last-child:hover {
+  margin-right: initial;
+}
+.mobile-wrapper .row > div > div {
+  opacity: .7;
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-content: center;
+}
+.mobile-wrapper .row > div .category-icon {
+  flex-direction: row;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  font-size: 0.79rem;
+  color: #0DAFE0;
+  display: flex;
+  align-items: center;
+  padding: .35rem;
+  opacity: .7;
+  filter: grayscale(50%);
+}
+.mobile-wrapper .row > div .category-icon:after {
+  content: '';
+  display: block;
+  margin-left: .5rem;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(//themjcl.com/wp-content/uploads/2019/02/sports_biotech_icon.svg);
+  mask-image: url(//themjcl.com/wp-content/uploads/2019/02/sports_biotech_icon.svg);
+  background-color: #0DAFE0;
+  height: 20px;
+  width: 21px;
+}
+.mobile-wrapper .row > div .title {
+  color: #f8f9fa;
+}
+.mobile-wrapper .row > div .subtitle {
+  opacity: 1;
+  padding-bottom: 1rem;
+  color: rgba(158, 223, 243, 0.9);
+}
+.mobile-wrapper .row > div .description {
+  padding-bottom: .5rem;
+}
+.mobile-wrapper .row > div .description p {
+  width: 100%;
+  opacity: 1;
+  color: #6c757d;
+}
+.mobile-wrapper .row > div .description a {
+  color: #6c757d;
+}
+.mobile-wrapper .row > div:active > div {
+  opacity: 1;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.mobile-wrapper .row > div:active .title {
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  text-shadow: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.mobile-wrapper .row > div:active .subtitle {
+  opacity: 1;
+  color: #9edff3;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.mobile-wrapper .row > div:active .category-icon {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+.mobile-wrapper .row > div:active .description p {
+  opacity: 1;
+  color: #f8f9fa;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.mobile-wrapper .row > div:active .description a {
+  opacity: 1;
+  color: #f8f9fa;
+  letter-spacing: .06rem;
+  line-height: .9;
+  font-size: .9rem;
+  padding: .2rem .5rem .3rem;
+  background: rgba(233, 236, 239, 0.1);
+  border: 1px solid rgba(233, 236, 239, 0.2);
+  border-radius: 4px;
+}
+.mobile-wrapper .row > div:active:before {
+  background: rgba(33, 37, 41, 0.9);
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container .row h4:first-of-type {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+h2:first-of-type {
+  text-align: center;
+}
+
+.wrapper .row:first-child > :nth-child(1), .mobile-wrapper .row:first-child > :nth-child(1) {
+  background-color: #515272;
+  background-image: url("https://lifemadesweeter.com/wp-content/uploads/Healthy-Fruit-Pizza-Photo-Recipe-Picture-1-500x500.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.wrapper .row:first-child > :nth-child(2), .mobile-wrapper .row:first-child > :nth-child(2) {
+  background-color: #6c3f31;
+  background-image: url("https://cookieandkate.com/images/2017/05/vegetable-fried-rice.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.wrapper .row:first-child > :nth-child(3), .mobile-wrapper .row:first-child > :nth-child(3) {
+  background-color: #323119;
+  background-image: url("https://purewows3.imgix.net/images/articles/2019_10/keto-ground-beef-recipes-healthy-swedish-meatballs-recipe.jpg?auto=format,compress&cs=strip");
+  background-position: center center;
+  background-size: cover;
+}
+.wrapper .row:last-child > :nth-child(1), .mobile-wrapper .row:last-child > :nth-child(1) {
+  background-color: #5d92cb;
+  background-image: url("https://beamingbaker.com/wp-content/uploads/2018/01/Homemade-Chunky-Paleo-Granola-with-Clusters-Grain-Free-Vegan-Gluten-Free-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.wrapper .row:last-child > :nth-child(2), .mobile-wrapper .row:last-child > :nth-child(2) {
+  background: #e9ecef;
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/buddha-bowl-on-a-stone-background-healthy-eating-royalty-free-image-913903716-1553031541.jpg?crop=0.630xw:0.945xh;0.370xw,0.0192xh&resize=640:*");
+  background-position: center center;
+  background-size: cover;
+}
+.wrapper .row:last-child > :nth-child(3), .mobile-wrapper .row:last-child > :nth-child(3) {
+  background-color: #112a3b;
+  background-image: url("https://cookieandkate.com/images/2017/04/healthy-chocolate-chips-blondies-recipe-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
