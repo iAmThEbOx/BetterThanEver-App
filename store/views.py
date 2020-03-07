@@ -9,7 +9,7 @@ from django.views import View
 class Home(View):
     def get(self, request, *args, **kwargs):
         if not request.user.is_authenticated:
-            login(request, User.objects.filter(username='theadityat24')[0])
+            login(request, User.objects.filter(username='demouser1234')[0])
         return render(request, template_name='store/home.html')
 
 def landing(request, *args, **kwargs):
@@ -25,5 +25,5 @@ def store(request, *args, **kwargs):
     )
             
 def pricing(request, *args, **kwargs):
-    return render(request, template_name='pricing.html')
+    return render(request, template_name='store/pricing.html')
     

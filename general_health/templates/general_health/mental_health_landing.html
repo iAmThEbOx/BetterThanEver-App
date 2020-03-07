@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Mental Health Landing Page</title>
+  <link rel="stylesheet" href="{% static 'general_health/mental_health_landing.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+  <head>
+
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <!--Google Font-->
+
+  </head>
+
+  <body>
+
+    <div class="JayZ">
+      <div class="beginning">
+    <h1>Fitnex Mental Health Resources</h1>
+      </div>
+
+    <h3>Information and resources to keep your mind as healthy as your body.</h3>
+      <ul>
+<br>
+        <li>
+          <a href="https://medlineplus.gov/mentalhealth.html">
+          <img src="https://musculardystrophynews.com/wp-content/uploads/2018/07/shutterstock_282943754-760x475@2x.jpg" height = 140 width = 250>
+          <p>Why is mental health important?</p>
+          </a>
+        </li>
+<br>
+        <li>
+          <a href="https://www.healthline.com/health/mental-health-resources#emergency-help">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOab3G3ZnougUaIYeGE-VLAJU2FBJFwzE-d4i0YmM5XHpFrrxS"height = 140 width = 250>
+          <p>How to get professional help</p>
+          </a>
+        </li>
+<br>
+        <li>
+          <a href="https://www.verywellmind.com/a-list-of-psychological-disorders-2794776">
+          <img src="https://www.incimages.com/uploaded_files/image/970x450/shutterstock_619960997_360000.jpg"height = 140 width = 250>
+          <p>Mental Health Disorders</p>
+          </a>
+        </li>
+<br>
+        <li>
+          <a href="{% url 'general_health_evaluation' %}">
+          <img src="https://www.cdc.gov/hiv/images/basics/livingwithhiv/mental-health-800x400-small.png"height = 140 width = 250>
+          <p>Mental Health Evaluation</p>
+          </a>
+        </li>
+<br>
+        <li>
+          <a href="{% url 'home' %}">
+          <img src="https://www.netclipart.com/pp/m/130-1309126_home-icon-home-icon-png-red.png"height = 140 width = 250 border = 1px>
+          <p>Return to home page</p>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </body>
+  
+</html>
+<!-- partial -->
+  
+</body>
+</html>

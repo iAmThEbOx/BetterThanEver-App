@@ -6,3 +6,12 @@ def general_health(request, *args, **kwargs):
         template_name='general_health/general_health.html',
         context={'user': request.user, 'bmi': request.user.profile.weight/(request.user.profile.height**2)}
     )
+
+def landing(request, *args, **kwargs):
+    return render(request, template_name='general_health/mental_health_landing.html')
+
+def evaluation(request, *args, **kwargs):
+    return render(request, template_name='general_health/evaluation.html')
+
+def sleep_timer(request, *args, **kwargs):
+    return render(request, template_name='general_health/timer.html')
