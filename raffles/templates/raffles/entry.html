@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <title>CodePen - Tournament/Raffle Entry Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:800,600,300'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:800,600,300'>
+<link rel="stylesheet" href="{% static 'raffles/entry.css' %}">
 
 </head>
 <body>
@@ -28,7 +29,7 @@
         <br><br><br></small> WIN 50 Nexcoins</div>
       <div class="text">Win 50 Nexcoins in this premium-exclusive raffle.</div>
       
-      <a onclick="window.location.href = '{% url 'raffle-register' %};" class="cta" target="_blank">Seize the Opportunity</a>
+      <a href="{% url 'raffle-register' %}" class="cta" target="_blank">Seize the Opportunity</a>
     </div>
   </div>
 </div>

@@ -39,7 +39,7 @@ urlpatterns = [
     path('workouts/', include('workouts.urls')),
     path('recipes/', include('recipes.urls')),
     path('generalhealth/', include('general_health.urls')),
-    path('raffles', include('raffles.urls'))
+    path('raffles/', include('raffles.urls'))
 ]
 
 if settings.DEBUG:

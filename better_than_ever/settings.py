@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'workouts',
     'general_health',
+    'raffles.apps.RafflesConfig',
 ]
 
 MIDDLEWARE = [
