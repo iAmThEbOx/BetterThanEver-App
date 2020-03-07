@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Nexcoin Store Page</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lexend+Deca&amp;display=swap'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="{% static 'store/store.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          </button>
+        </div>
+      </div>
+  <a href="GENERAL HEALTH DATA PAGE URL HERE">
+ 
+    <div class="balance">
+      
+        <strong>
+          <br>
+            <center>
+                <h5 class="contactustext">{{ balance }}</h5>
+            </center>    
+        </strong>
+    </div>
+  </a>
+</>  
+
+</header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container2">
+          <br><br>
+          <h1 class="jumbotron-heading">Nexcoin Sponsored Product Store</h1>
+          <br>
+          <h3 class="lead text">Use your Nexcoins to buy products, subscriptions, and even free fitness classes and camps from reputable fitness brands that we work with and support. Buy now at discounted product prices to bring more, higher quality, and cheaper goods and services to the store, and support the many services we provide to you as we help you achieve your fitness goals. 
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+<br>
+          <br>
+          <div class="row">
+          {% for item in items %}
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <h4 class="card-text">{{ item.title }}</h4>
+                <br>
+  <img src="{{ item.image.url }}" style="width:348px;height:250px;border:0;">
+                <div class="card-body">
+                  <p class="card-text">{{ item.description }}</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-danger btn-sm">Buy</button>
+                      
+                      <button type="button" class="btn btn-primary btn-sm">Review</button>
+                    </div>
+                    <small class="text-muted">{{ item.price }}</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+          </div>
+
+    </main>
+    </footer>
+<br>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- partial -->
+
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

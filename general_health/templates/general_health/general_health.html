@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - General Health Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://rawgit.com/masayuki0812/c3/master/c3.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel="stylesheet" href="{% static 'general_health/general_health.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="container">
+  <div id="row">
+    
+    <div class="block-one col-lg-4">
+      <h1 class="title"><span><i class="health fa fa-heartbeat" aria-hidden="true"></i></span>Fitnex Data</h1>
+    </div>
+    
+    <div class="block-two col-lg-6">
+      <h1 class="alert"><span><i class="icon fa fa-check-circle-o" aria-hidden="true"></i></span>Your vitals are in normal range.</h1>
+    </div>
+    
+    <div class="block-three col-lg-2">
+      
+      <h2 class="name">{{ user.username }}</h2>
+      <a href="#" class="thumbnail">
+      <img class="thumb-pic" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/827672/Screen%20Shot%202016-11-21%20at%209.58.01%20AM.png"/>
+    </a>
+      
+    </div>
+   
+  <!-- end row -->  
+  </div>
+<!-- end container -->   
+</div>
+
+<div id="container">
+  <div id="row">
+    
+    <div class="block-one col-lg-3">
+      <h1 class="measurement"><span><i class="icon fa fa-heart-o" aria-hidden="true"></i></span>96</h1>
+      <h3 class="sub-measurement">beats per minute</h3>
+    </div>
+    
+    <div class="block-two col-lg-3">
+      <h1 class="measurement"><span><i class="icon fa fa-thermometer-empty" aria-hidden="true"></i></span>78</h1>
+      <h3 class="sub-measurement">body temperature</h3>
+    </div>
+    
+    <div class="block-one col-lg-3">
+      <h1 class="measurement"><span><i class="icon fa fa-heart" aria-hidden="true"></i></span>90 | 60</h1>
+      <h3 class="sub-measurement">mmHg</h3>
+    </div>
+    
+    <div class="block-two col-lg-3">
+      <h1 class="measurement"><span><i class="icon fa fa-user-md" aria-hidden="true"></i></span>10</h1>
+      <h3 class="sub-measurement">months since last doctor visit</h3>
+    </div>
+   
+  <!-- end row -->  
+  </div>
+<!-- end container -->   
+</div>
+
+<div id="container">
+  <div id="row">
+    
+    <div class="block-one col-lg-3">
+       <h1 class="measurement"><span><i class="icon fa fa-area-chart" aria-hidden="true"></i></span>16</h1>
+            <h3 class="sub-measurement">percent body fat <br>(last updated 3/2/2020)</h3>
+    </div>
+    
+    <div class="block-two col-lg-3">
+       <h1 class="measurement"><span><i class="icon fa fa-user-o" aria-hidden="true"></i></span>{{ user.profile.weight}} lbs</h1>
+            <h3 class="sub-measurement">Weight<br>(last updated 3/6/2020)</h3>
+    </div>
+    
+    <div class="block-one col-lg-3">
+      <h1 class="measurement"><span><i class="icon fa fa-sort-amount-asc fa-flip-vertical" aria-hidden="true"></i></span>{{ user.profile.height}}"</h1>
+            <h3 class="sub-measurement">Height<br>(last updated 2/12/2020)</h3>
+    </div>
+    
+    <div class="block-two col-lg-3">
+      <h1 class="measurement"><span><i class="icon fa fa-adjust fa-rotate-90" aria-hidden="true"></i></span>8,500</h1>
+            <h3 class="sub-measurement">steps taken today</h3>
+    </div>
+   
+  <!-- end row -->  
+  </div>
+<!-- end container -->   
+</div>
+
+<div id="container">
+  <div id="row">
+    
+    <div class="block-four col-lg-4">
+      <h1 class="measurement2"><span></span><img src="https://st3.depositphotos.com/5625700/17393/i/450/depositphotos_173939950-stock-photo-letter-n-alphabet-symbol-space.jpg" style="float:left;width:70px;height:75px;">{{ user.profile.balance }}</h1>
+            <h3 class="sub-measurement2">total Nexcoins</h3>
+    </div>
+    
+    <div class="block-four col-lg-8">
+      <div class="ct-chart" id="chart1"></div>
+    </div>
+   
+  <!-- end row -->  
+  </div>
+<!-- end container -->   
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://rawgit.com/masayuki0812/c3/master/c3.js'></script>
+<script  src="{% static 'general_health/general_health.js' %}"></script>
+
+</body>
+</html>

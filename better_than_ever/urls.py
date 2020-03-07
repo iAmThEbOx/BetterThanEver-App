@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from users import views as user_views
+from store import views as store_views
 from django.contrib.auth import views as auth_views
 
 # Registration and login currently broken 03-01-20
@@ -29,8 +30,10 @@ urlpatterns = [
     path('profileupdate/', user_views.UpdateProfileView.as_view(), name='profileupdate'),
     path('signup/', user_views.register, name='register'),
     path('login/', auth_views.LoginView.as_view(template_name='users/register.html'), name='login'),
+    path('store/', store_views.store, name='store'),
     path('workouts/', include('workouts.urls')),
     path('recipes/', include('recipes.urls')),
+    path('generalhealth/', include('general_health.urls')),
 ]
 
 if settings.DEBUG:

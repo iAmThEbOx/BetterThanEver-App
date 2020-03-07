@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'recipes',
     'widget_tweaks',
     'workouts',
+    'general_health',
 ]
 
 MIDDLEWARE = [
