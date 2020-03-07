@@ -1,0 +1,123 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Workouts Page Catalog</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'workouts/catalog.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+<h1 style="text-align:center;"> Workouts Catalog</h1>
+      </div>
+    <br>
+    <br>
+    </div>
+  </div>
+    <div class="wrapper pb-5">
+        <div class="container">
+            <div class="row">
+                <!-- row one, item 1 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'workouts-strength' %}" target="_blank" title="Become Powerful!">
+                            <div>
+                                <h2 class="title">I Am Powerful</h2>
+                                <p class="subtitle">Strength Training Workouts</p>
+                                <div class="description">
+                                    <p>Our strength training videos will provide high intensity exercise for large muscle groups and develop them them to make your body bigger and stronger with increased muscle mass.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- row one, item 2 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'workouts-cardio' %}" target="_blank" title="Become Tireless!">
+                            <div>
+                                <h2 class="title">I Am Tireless</h2>
+                                <p class="subtitle">Cardio + Endurance Workouts</p>
+                                <div class="description">
+                                    <p>Our cardio and endurance training videos will strengthen your respiratory and cardiovascular systems trhough low intensity but long and strenuous exercises, developing lean muscle and drastically improve your fitness without too much of a change in size and weight.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- row one, item 3 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'workouts-speed' %}" target="_blank" title="Become Rapid!">
+                            <div>
+                                <h2 class="title">I Am Rapid</h2>
+                                <p class="subtitle">Speed + Agility Workouts</p>
+                                <div class="description">
+                                    <p>Our speed and agility training videos will improve your mobility and allow you to not only get faster but maintain your top speed for longer to perfect aceration and movement, untilizing high-intensity interval traing including many differenttypes of spritning drills, allowing you toachieve your most mobile, quick self.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <!-- row two, item 1 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'workouts-flexibility' %}" target="_blank" title="Become Elastic!">
+                            <div>
+                                <h2 class="title">I Am Elastic</h2>
+                                <p class="subtitle">Flexibility Exercises</p>
+                                <div class="description">
+                                    <p>Our flexibilty training videos will expand your range of movement  through both stationary and dynamic stretching exercises, loosening up your muscles and improving all areas of your mobility, even making you more resilient to physical injury that often result from overstretched and overused muscles.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- row two, item 2 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'workouts-meditation' %}" target="_blank" title="Become Harmonius!">
+                            <div>
+                                <h2 class="title">I Am Harmonius</h2>
+                                <p class="subtitle">Meditation + Yoga Exercises</p>
+                                <div class="description">
+                                    <p>Our medidtation and yoga exercise videos will provide numerous beenfits toboth your body and mind, using a relaxed and peaceful environment to gradually improve your balance, endurance, and flexibility, while also keeping your mind healthy by relieving stress and anxiety, allowing for a tranquil and therapeutic method of taking your level of physical and mental fitness to a new level.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- row two, item 3 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'workouts-general' %}" target="_blank" title="Become Robust!">
+                            <div>
+                                <h2 class="title">I Am Robust</h2>
+                                <p class="subtitle">Workouts For General Health + Fitness</p>
+                                <div class="description">
+                                    <p>Don't want to focus on one specific type of workout or not sure where to start? Try our general health workouts to provide reliable and balanced workouts to improve your overall health without a single focus for training as many users that are athketes may want to do.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div 
+    </div>
+</body>
+<!-- partial -->
+  
+</body>
+</html>

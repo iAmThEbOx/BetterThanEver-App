@@ -1,0 +1,277 @@
+html, body {
+    margin: 0;
+  }
+
+  h1, h2, a {
+    font-family: 'Roboto','Oswald', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .sub-heading2 {
+    font-family: 'Montserrat','Garamond', sans-serif;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-family: 'Montserrat','Garamond', sans-serif;
+    text-transform: uppercase;
+    color: #0a0a09;
+  }
+
+  p {
+    font-family: Helvetica, Arial, sans-serif; 
+  }
+
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+
+  }
+
+  /* Main */
+  .main {
+    text-align: center;
+    background: url("https://ufcgymweb.blob.core.windows.net/ufcgym-web/shared/classes_carousel/DUT.jpg") no-repeat center center;
+    background-size: cover;
+    height: 550px;
+    
+  }
+
+  .main .container {
+    position: relative;
+    top: 100px;
+  }
+h1 {
+background: -webkit-linear-gradient(top right, blue,red);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: 'Didot', sans-serif;
+}
+  .header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 8em !important;
+    padding-top: 0px;
+    
+  }
+
+  .main p {
+    color: purple;
+    margin: 0 0 20px 0;
+    font-size: 30px;
+  }
+
+  .main .btn {
+    background-color: #C8CE00;
+    color: black;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  /* Supporting */
+  .supporting {
+    text-align: center;
+    padding: 50px 0 80px;
+  }
+  .supporting-3 {
+    background-color: #eee;
+    text-align: center;
+    padding: 50px 0 80px;
+  }
+  .supporting-3 h2 {
+    color: #eee;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+
+  .supporting .col {
+    float: left;
+    width: 30%;
+    padding: 20px;
+  }
+
+  .supporting h2 {
+    color: #0a0a09;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+
+  .supporting p {
+    color: #0a0a09;
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  .supporting .btn {
+    background-color:#C8CE00;
+    color: black;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .supporting-3 .btn {
+    background-color:#C8CE00;
+    color: black;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .supporting-3 {
+    background-color: #5BCFA5;
+  }
+
+  .supporting .btn1 {
+    background-image: linear-gradient(to top right, blue, red);
+    color: white;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .supporting .btn2 {
+    background-color:#C8CE00;
+    color: black;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .supporting .btn3 {
+    background-color:#C8CE00;
+    color: black;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  /* Feature */
+  .feature {
+    background: url(https://res.cloudinary.com/bigboydesign1/image/upload/v1473108774/feature_qzy2ix.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+  }
+
+  .feature .container {
+    position: relative;
+    top: 200px;
+  }
+
+  .feature h2 {
+    color: #eee;
+    font-size: 40px;
+    margin:0;
+    padding:50px 0 0;
+  }
+  .feature p{
+    color: #eee;
+  }
+
+  .feature .btn {
+    background-color:#C8CE00;
+    color: black;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  /* Footer */
+  .footer {
+    background: url(https://res.cloudinary.com/bigboydesign1/image/upload/v1489691637/strength1a_h4jbcb.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+  }
+
+  .footer .container {
+    position: relative;
+    top: 200px;
+  }
+
+  .footer h2 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+    padding:50px 0 0;
+  }
+
+  .footer p {
+    color: #fff;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+  }
+
+  .footer .btn {
+    background-color: #C8CE00;
+    color: black;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .circle1 {
+    
+  }
+
+  a.btn:hover {
+    background:#eee;
+    color:black;
+  }
+
+  a.btn1:hover {
+    background:#a00cb1;
+    color:#000;
+
+  @media (min-width:600px) {
+    .main h1 {
+      font-size: 200px;
+    }
+
+    .supporting .col {
+      width: 30%;
+    }
+
+    .supporting h2 {
+      font-size: 40px;
+    }
+
+    .supporting p {
+      font-size: 14px;
+    }
+
+    .feature h2 {
+      font-size: 60px;
+    }
+  }
+
+  #whiteCircle {
+    width: 90px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 90px 90px 0 0;
+    transform: rotate(180deg) scaleX(-1);
+    background: red;
+  }

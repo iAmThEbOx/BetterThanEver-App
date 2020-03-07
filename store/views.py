@@ -1,16 +1,20 @@
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth import login
+from django.contrib.auth.models import User
 from .models import StoreItem, StoreItemReview
 from users import models as user_models
 from django.views import View
 
 class Home(View):
     def get(self, request, *args, **kwargs):
-        context = {}
-        if request.user.is_authenticated:
-            context['user'] = request.user
-            context['past_weights'] = user_models.PastWeight.objects.filter(profile=request.user.profile)
-            context['past_heights'] = user_models.PastHeight.objects.filter(profile=request.user.profile)
+        if not request.user.is_authenticated:
+            login(request, User.objects.filter(username='theadityat24')[0])
+        return render(request, template_name='store/home.html')
+
+def landing(request, *args, **kwargs):
+    return render(request, template_name='store/landing.html')
+            
 
 def store(request, *args, **kwargs):
     return render(request, template_name='store/store.html',

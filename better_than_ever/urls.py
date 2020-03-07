@@ -19,6 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from users import views as user_views
 from store import views as store_views
+from raffles import views as raffle_views
 from django.contrib.auth import views as auth_views
 
 # Registration and login currently broken 03-01-20
@@ -30,10 +31,14 @@ urlpatterns = [
     path('profileupdate/', user_views.UpdateProfileView.as_view(), name='profileupdate'),
     path('signup/', user_views.register, name='register'),
     path('login/', auth_views.LoginView.as_view(template_name='users/register.html'), name='login'),
+    path('challenge/', user_views.landing, name='fitness_challenge'),
     path('store/', store_views.store, name='store'),
+    path('', store_views.landing, name='landing'),
+    path('home', store_views.Home.as_view(), name='home'),
     path('workouts/', include('workouts.urls')),
     path('recipes/', include('recipes.urls')),
     path('generalhealth/', include('general_health.urls')),
+    path('raffles', include('raffles.urls'))
 ]
 
 if settings.DEBUG:

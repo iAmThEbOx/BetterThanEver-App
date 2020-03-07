@@ -3,7 +3,7 @@ from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth import authenticate, login
 
-from .models import Profile, PastWeight, PastHeight
+from .models import Profile, PastWeight, PastHeight, FitnessChallenge
 from .forms import (
     UserCreationForm,
     ProfileUpdateForm,
@@ -117,3 +117,6 @@ class HeightUpdateView(LoginRequiredMixin, View):
         return render(request, 'users/heightupdate.html', {'form': form})
             
                 
+def landing(request, *args, **kwargs):
+    context = {'challenges': FitnessChallenge.objects.all()}
+    return render(request, template_name='users/challengelanding.html', context=context)

@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fitnex</title>
+  <link rel="stylesheet" href="{% static 'store/landing.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="fourzerofour">
+    <h1>Fitnex</h1>
+    <p>The Fitness App of the Future</p><br /><br>
+    <button onclick="document.location = '{% url 'home' %}'">Begin Your Journey...</button>
+    
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

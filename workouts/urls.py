@@ -6,6 +6,7 @@ from .views import (
     meditation,
     speed,
     strength,
+    catalog,
 )
 
 urlpatterns = [
@@ -15,4 +16,5 @@ urlpatterns = [
     path('meditation', meditation, name='workouts-meditation'),
     path('speed', speed, name='workouts-speed'),
     path('strength', general, name='workouts-strength'),
+    path('', catalog, name='workouts-catalog'),
 ]

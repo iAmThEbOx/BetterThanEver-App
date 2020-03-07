@@ -45,6 +45,7 @@ def speed(request, *args, **kwargs):
         }
         return render(request, 'workouts/speed.html', context)
 
-
+def catalog(request, *args, **kwargs):
+    return render(request, template_name='workouts/catalog.html')
 
 
