@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Healthy Recipes Catalog</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="{% static 'recipes/catalog.css' %}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+<h1 style="text-align:center;"> Diet + Nutrition Catalog</h1>
+      </div>
+    <br>
+    <br>
+    </div>
+  </div>
+    <div class="wrapper pb-5">
+        <div class="container">
+            <div class="row">
+                <!-- row one, item 1 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'fruit' %}" target="_blank" title="Enhance your fruit game!">
+                            <div>
+                                <h2 class="title">Fruitrition</h2>
+                                <p class="subtitle">Fruit-Focused Recipes</p>
+                                <div class="description">
+                                    <p>Fruit has been recognized as a good source of vitamins and minerals, and for their role in preventing vitamin C and vitamin A deficiencies. People who eat fruit as part of an overall healthy diet generally have a reduced risk of chronic diseases. USDA's MyPlate encourages making half your plate fruits and vegetables for healthy eating. Our easy-to-make fruit recipes will bring you all these benefits in the form of a delicious meal to making eating healthy easier than ever!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- row one, item 2 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'vegetable' %}" target="_blank" title="Enhance your veggie game!">
+                            <div>
+                                <h2 class="title">Dependable Vegetables</h2>
+                                <p class="subtitle">Vegetable-Focused Recipes</p>
+                                <div class="description">
+                                    <p>Eating vegetables provides health benefits – people who eat more vegetables
+and fruits as part of an overall healthy diet are likely to have a reduced risk of
+some chronic diseases. Vegetables provide nutrients vital for health and
+maintenance of your body. USDA's MyPlate encourages making half your plate fruits and vegetables for healthy eating. Our easy-to-make vegetable recipes will bring you all these benefits in the form of a delicious meal to making eating healthy easier than ever!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- row one, item 3 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'meat' %}" target="_blank" title="Enhance your meat game!">
+                            <div>
+                                <h2 class="title">Meat For The Elite</h2>
+                                <p class="subtitle">Meat-Focused Recipes</p>
+                                <div class="description">
+                                    <p>Meat and poultry contain protein, which is important for growth and development, and other nutrients your body needs, such as iodine, iron, zinc and vitamin B12. Despite health controversies around various types of meat, avoiding processed meats to minimise your intake of salt and saturated fat, and choosing lean cuts of meat and poultry, will make it a greatly beneficial and filling part of your diet. Our easy-to-make meat recipes will bring you all these benefits, without most of the disadvantages, in the form of a delicious meal to making eating healthy easier than ever!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <!-- row two, item 1 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'grain' %}" target="_blank" title="Enhance your grain game!">
+                            <div>
+                                <h2 class="title">#grainz</h2>
+                                <p class="subtitle">Grain-Focused Recipes</p>
+                                <div class="description">
+                                    <p>People who eat whole grains as part of a healthy diet have a reduced risk of some chronic diseases. Grains are important sources of many nutrients, including fiber, B vitamins (thiamin, riboflavin, niacin and folate) and minerals (iron, magnesium and selenium), helping reduce blood cholesterol levels, lowering risk of heart disease, and redicung constipation. USDA's MyPlate recommends making half of your daily grain choices whole grain for healthy eating. Our easy-to-make grain-based recipes will bring you all these benefits in the form of a delicious meal to making eating healthy easier than ever!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- row two, item 2 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'carb' %}" target="_blank" title="Enhance your carb game!">
+                            <div>
+                                <h2 class="title">For The Carbivorous</h2>
+                                <p class="subtitle">Carb-Focused Recipes</p>
+                                <div class="description">
+                                    <p>Aside from being the main energy source for the body, carbohydrates play a role in glucose and insulin metabolism, as well as cholesterol and triglyceride metabolism and fermentation. When carbohydrates are digested, they are broken down into glucose to be either used as energy or stored in the liver and muscles for future use. Our easy-to-make carb-based recipes will bring you all these benefits in the form of a delicious meal to making eating healthy easier than ever!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- row two, item 3 -->
+                <div class="col-lg-4 item-wrapper">
+                    <div>
+                        <a class="ext-link" href="{% url 'dessert' %}" target="_blank" title="Compromise with your sweet tooth!">
+                            <div>
+                                <h2 class="title">No Sugarcoating</h2>
+                                <p class="subtitle">Healthy Dessert Recipes</p>
+                                <div class="description">
+                                    <p>A delicious dessert doesn't have to be a high-calorie, high-fat disaster, either: they just have to integrate smart choices and substitutions in the cooking process, such as steering clear of fatty ingredients like creamy whipped topping or butter, and sticking with fresh fruit and low-fat choices.  Our easy-to-make healthy dessert recipes will satisfy your sweet tooth without compromising your wellbeing through substitutions and creative ingredients that will make your desserts both tastier AND healthier than ever!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+    </div>
+</body>
+<!-- partial -->
+  
+</body>
+</html>

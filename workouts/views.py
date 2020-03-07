@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import View
 from .models import Workout
-
+# #
 def general(request, *args, **kwargs):
     if request.method == 'GET':
         context = {

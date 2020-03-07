@@ -5,14 +5,21 @@ from django.db import models
 # Create your models here.
 class Recipe(models.Model):
     CATEGORY_CHOICES = [
-        ('BR', 'Breakfast'),
-        ('LU', 'Lunch'),
-        ('DI', 'Dinner'),
-        ('SN', 'Snack')
+        ('FR', 'Fruit'),
+        ('VE', 'Vegetables'),
+        ('ME', 'Meat'),
+        ('GR', 'Grains'),
+        ('CA', 'Carbs'),
+        ('DE', 'Dessert'),
     ]
+    title = models.CharField(max_length=140)
+    description = models.CharField(max_length=140)
     category = models.CharField(
         max_length=2, choices=CATEGORY_CHOICES
     )
+    link = models.URLField()
+    cooking_time = models.CharField(max_length=30)
+    image = models.ImageField(upload_to='recipe_pics', default='escher_pic.jpg')
 
 class RecipeIngredient(models.Model):
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)

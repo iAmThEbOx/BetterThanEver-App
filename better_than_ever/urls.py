@@ -30,6 +30,7 @@ urlpatterns = [
     path('signup/', user_views.register, name='register'),
     path('login/', auth_views.LoginView.as_view(template_name='users/register.html'), name='login'),
     path('workouts/', include('workouts.urls')),
+    path('recipes/', include('recipes.urls')),
 ]
 
 if settings.DEBUG:
