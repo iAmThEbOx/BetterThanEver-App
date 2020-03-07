@@ -24,4 +24,6 @@ def store(request, *args, **kwargs):
         }
     )
             
+def pricing(request, *args, **kwargs):
+    return render(request, template_name='pricing.html')
     

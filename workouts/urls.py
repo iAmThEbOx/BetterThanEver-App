@@ -15,6 +15,6 @@ urlpatterns = [
     path('flexibility', flexibility, name='workouts-flexibility'),
     path('meditation', meditation, name='workouts-meditation'),
     path('speed', speed, name='workouts-speed'),
-    path('strength', general, name='workouts-strength'),
+    path('strength', strength, name='workouts-strength'),
     path('', catalog, name='workouts-catalog'),
 ]
