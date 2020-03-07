@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -10,7 +12,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://rawgit.com/masayuki0812/c3/master/c3.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel="stylesheet" href="{% static 'general_health/general_health.css' %}">
 
 </head>
 <body>
@@ -114,7 +117,8 @@
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<script src='https://rawgit.com/masayuki0812/c3/master/c3.js'></script><script  src="./script.js"></script>
+<script src='https://rawgit.com/masayuki0812/c3/master/c3.js'></script>
+<script  src="{% static 'general_health/general_health.js' %}"></script>
 
 </body>
 </html>
