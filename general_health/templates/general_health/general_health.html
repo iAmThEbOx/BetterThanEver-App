@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -12,8 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://rawgit.com/masayuki0812/c3/master/c3.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
-<link rel="stylesheet" href="{% static 'general_health/general_health.css' %}">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
@@ -80,13 +77,13 @@
     </div>
     
     <div class="block-two col-lg-3">
-       <h1 class="measurement"><span><i class="icon fa fa-user-o" aria-hidden="true"></i></span>{{ user.profile.weight}} lbs</h1>
-            <h3 class="sub-measurement">Weight<br>(last updated 3/6/2020)</h3>
+       <h1 class="measurement"><span><i class="icon fa fa-user-o" aria-hidden="true"></i></span>{{ user.profile.weight }}</h1>
+            <h3 class="sub-measurement">body weight<br>(last updated 3/6/2020)</h3>
     </div>
     
     <div class="block-one col-lg-3">
-      <h1 class="measurement"><span><i class="icon fa fa-sort-amount-asc fa-flip-vertical" aria-hidden="true"></i></span>{{ user.profile.height}}"</h1>
-            <h3 class="sub-measurement">Height<br>(last updated 2/12/2020)</h3>
+      <h1 class="measurement"><span><i class="icon fa fa-sort-amount-asc fa-flip-vertical" aria-hidden="true"></i></span>{{ user.profile.height }}"</h1>
+            <h3 class="sub-measurement">body height<br>(last updated 2/12/2020)</h3>
     </div>
     
     <div class="block-two col-lg-3">
@@ -104,7 +101,7 @@
     
     <div class="block-four col-lg-4">
       <h1 class="measurement2"><span></span><img src="https://st3.depositphotos.com/5625700/17393/i/450/depositphotos_173939950-stock-photo-letter-n-alphabet-symbol-space.jpg" style="float:left;width:70px;height:75px;">{{ user.profile.balance }}</h1>
-            <br><br> <h3 class="sub-measurement2">total Nexcoins</h3>
+           <br><br> <h3 class="sub-measurement2">total Nexcoins</h3>
     </div>
     
     <div class="block-four col-lg-8">
@@ -117,8 +114,7 @@
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-<script src='https://rawgit.com/masayuki0812/c3/master/c3.js'></script>
-<script  src="{% static 'general_health/general_health.js' %}"></script>
+<script src='https://rawgit.com/masayuki0812/c3/master/c3.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
